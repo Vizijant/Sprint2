@@ -1,0 +1,143 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  html {
+    font-size: 50%;
+    color: rgb(241, 192, 145)
+  }
+  
+  body {
+      height: 100%;
+    margin: 0rem 2rem;
+    background-color: #a02f06;
+  }
+  
+  
+  a {
+    text-decoration: none;
+    color: rgb(241, 192, 145);
+  }
+  
+  h2 {
+    font-size: 1.7em;
+    margin-top: 0.83em;
+    margin-bottom: 0.83em;
+    text-align: center;
+    color: rgb(241, 192, 145);
+
+  
+  }
+  a{
+    display: block;
+    font-size: 1.5em;
+    font-weight: bold;
+    background-color: #E04006;
+    padding: 10px;
+    border: 2px groove #E04006;
+  }
+  p {
+    text-align: justify;
+  }
+
+    
+  /* GRID CONTAINER */
+  .grid_container {
+      height: 100%;
+      display: grid;
+      grid-template-columns: 250px 1fr;
+      grid-template-rows: 145px 300px 250px 100px;
+      grid-gap: 1rem;
+      border: 2px groove #E04006;
+
+      grid-template-areas:
+      "header header"
+      "column_navigator column_my"
+      "column_navigator column_homework"
+      "footer footer";
+    } 
+    .header{
+      grid-area: header;
+      grid-column: span 5;
+      border: 1rem groove #E04006;
+    }
+    .column_navigator{
+      grid-area: column_navigator;
+
+
+  background-color: #E04006;
+  border: 1rem groove #E04006;
+} 
+    .column_my{
+      grid-area: column_my;
+      background-color: #E04006;
+      border: 1rem groove #E04006;
+    } 
+    .column_homework { 
+      grid-area: column_homework;
+      background-color: #E04006;
+      border: 1rem groove #E04006;
+    } 
+  
+    .footer{  
+      grid-area: footer;
+      background-color: #E04006;
+      border: 1rem groove #E04006;
+      padding: 20px 20px 20px 20px;
+    }  
+    .header:nth-child(1) {
+      grid-column: 1/-1;
+      text-align: center;
+      font-size: 1.7rem;
+      padding: 2rem;
+      background-color: #E04006;
+
+  }   
+  .links{
+      display: grid;
+
+      row-gap: 20px;
+      justify-items: center;
+
+
+
+  
+
+  }
+  .links div img{
+    display: block;
+    width: 25rem;
+    height: 25rem;
+    filter: invert(0);
+    border: groove 2px #E04006;
+
+
+  }
+
+img {
+    width: 4rem;
+    height: 4rem;
+    filter: invert(0);
+   
+}
+
+
+.icons {
+   display: grid;
+   grid-template-columns: auto auto auto auto;
+   justify-content: center;
+ 
+
+}
+
+.image {
+    margin: 0 1rem 0 1rem;
+    border: groove 5px #E04006;
+    background-color: #E04006;
+
+}
+
+
+ 
