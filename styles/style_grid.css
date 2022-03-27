@@ -1,0 +1,154 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  html {
+    font-size: 50%;
+    color:  #03a9f4
+  }
+  
+  body {
+      height: 100%;
+    margin: 0rem 2rem;
+    background-color: #003147;
+  }
+ 
+  
+  
+  h2 {
+    font-size: 1.7em;
+    margin-top: 0.83em;
+    margin-bottom: 0.83em;
+    text-align: center;
+    color:  #03a9f4;
+
+  
+  }
+  a{
+    display: block;
+    font-size: 1.5em;
+    font-weight: bold;
+    background-color:#094f66;
+    color: #03a9f4;
+    padding: 5px;
+    border-radius: 5px;
+    
+    
+  }
+  p {
+    text-align: justify;
+  }
+
+    
+  /* GRID CONTAINER */
+  .grid_container {
+      height: 100%;
+      display: grid;
+      grid-template-columns: 250px 1fr;
+      grid-template-rows: 145px 300px 250px 100px;
+      grid-gap: 1rem;
+      border: 2px groove#003147;
+
+      grid-template-areas:
+      "header header"
+      "column_navigator column_my"
+      "column_navigator column_homework"
+      "footer footer";
+    } 
+    .header{
+      grid-area: header;
+      grid-column: span 5;
+      border: 1rem groove#003147;
+    }
+    .column_navigator{
+      grid-area: column_navigator;
+
+
+  background-color:#003147;
+  border: 1rem groove#003147;
+} 
+    .column_my{
+      grid-area: column_my;
+      background-color:#003147;
+      border: 1rem groove#003147;
+    } 
+    .column_homework { 
+      grid-area: column_homework;
+      background-color:#003147;
+      border: 1rem groove#003147;
+    } 
+  
+    .footer{  
+      grid-area: footer;
+      background-color:#003147;
+      border: 1rem groove#003147;
+      padding: 20px 20px 20px 20px;
+    }  
+    .header:nth-child(1) {
+      grid-column: 1/-1;
+      text-align: center;
+      font-size: 1.7rem;
+      padding: 2rem;
+      background-color:#003147;
+
+  }   
+  .links{
+      display: grid;
+
+      row-gap: 20px;
+      justify-items: center;
+
+
+
+  
+
+  }
+  .links div img{
+    display: block;
+    width: 25rem;
+    height: 25rem;
+    filter: invert(0);
+    border: groove 2px#003147;
+
+
+  }
+
+img {
+    width: 4rem;
+    height: 4rem;
+    filter: invert(0);
+   
+}
+
+
+.icons {
+   display: grid;
+   grid-template-columns: auto auto auto auto;
+   justify-content: center;
+ 
+
+}
+
+.image {
+    margin: 0 1rem 0 1rem;
+    border: groove 5px#003147;
+    background-color:#003147;
+
+}
+.baton {
+ background-color: #003147; 
+ padding: 10px 50px ; 
+ border: #223BF3 solid 1px; 
+ border-radius: 50px;
+ cursor: pointer;
+text-decoration: #03a9f4;
+}
+
+a#back{
+  color: #223BF3;
+  width: 160px;
+
+}
+ 
